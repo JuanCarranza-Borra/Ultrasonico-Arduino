@@ -19,7 +19,7 @@ int Ultrasonico::GetDis(void)
   digitalWrite(_PinTrigger,HIGH);
   delayMicroseconds(10);
   digitalWrite(_PinTrigger,LOW);
-  _dis = (pulseIn(_PinEcho,HIGH,10000)/2) /29;
+  _dis = (pulseIn(_PinEcho,HIGH)/2) /29;
   return(_dis);
 }
 

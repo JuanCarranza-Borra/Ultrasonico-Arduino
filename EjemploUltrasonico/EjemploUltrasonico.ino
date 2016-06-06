@@ -4,7 +4,7 @@ Ultrasonico UltrasonicoA;  //Crea un ultrasonico llamado UltrasonicoA
 int distancia;  //Crea una variable para guardar la distancia
 
 void setup() {
-  UltrasonicoA.attach(1,2); //Define los pines del ultrasonico
+  UltrasonicoA.attach(8,9); //Define los pines del ultrasonico
                             //Echo,Trigger
   Serial.begin(9600);  //inicializa la comunicacion Serial 
 }
